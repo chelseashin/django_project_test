@@ -11,6 +11,7 @@ class Board(models.Model):
     
     def __str__(self):
         return f'Board{self.pk}'
+        # return self.title   # 억지로 볼 수 있음
 
 class Comment(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
